@@ -1,4 +1,4 @@
-FROM debian:Stretch
+FROM debian:stretch
 MAINTAINER Jujhar Singh [jujhar.com]
 
 # - Install packages
