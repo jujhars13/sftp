@@ -1,5 +1,5 @@
-FROM debian:jessie
-MAINTAINER Adrian Dvergsdal [atmoz.net]
+FROM debian:Stretch
+MAINTAINER Jujhar Singh [jujhar.com]
 
 # - Install packages
 # - OpenSSH needs /var/run/sshd to run
