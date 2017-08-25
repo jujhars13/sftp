@@ -1,9 +1,9 @@
+## SFTP Docker container
+Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things
+
 # Supported tags and respective `Dockerfile` links
 
 - [`debian-jessie`, `debian`, `latest` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/atmoz/sftp.svg)](http://microbadger.com/images/atmoz/sftp "Get your own image badge on microbadger.com")
-- [`alpine-3.6`, `alpine` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/alpine/Dockerfile) [![](https://images.microbadger.com/badges/image/atmoz/sftp:alpine.svg)](http://microbadger.com/images/atmoz/sftp:alpine "Get your own image badge on microbadger.com")
-- [`alpine-3.5` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/alpine-3.5/Dockerfile) [![](https://images.microbadger.com/badges/image/atmoz/sftp:alpine-3.5.svg)](http://microbadger.com/images/atmoz/sftp:alpine "Get your own image badge on microbadger.com")
-- [`alpine-3.4` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/alpine-3.4/Dockerfile) [![](https://images.microbadger.com/badges/image/atmoz/sftp:alpine-3.4.svg)](http://microbadger.com/images/atmoz/sftp:alpine-3.4 "Get your own image badge on microbadger.com")
 
 # Securely share your files
 
@@ -28,14 +28,6 @@ This is an automated build linked with the [debian](https://hub.docker.com/_/deb
   - For consistent server fingerprint, mount your own host keys (i.e. `/etc/ssh/ssh_host_*`)
 
 # Examples
-
-## Simplest docker run example
-
-```
-docker run -p 22:22 -d atmoz/sftp foo:pass:::upload
-```
-
-User "foo" with password "pass" can login with sftp and upload files to a folder called "upload". No mounted directories or custom UID/GID. Later you can inspect the files and use `--volumes-from` to mount them somewhere else (or see next example).
 
 ## Sharing a directory from your computer
 
@@ -88,21 +80,6 @@ foo:123:1001:100
 bar:abc:1002:100
 baz:xyz:1003:100
 ```
-
-## Encrypted password
-
-Add `:e` behind password to mark it as encrypted. Use single quotes if using terminal.
-
-```
-docker run \
-    -v /host/share:/home/foo/share \
-    -p 2222:22 -d atmoz/sftp \
-    'foo:$1$0G2g0GSt$ewU0t6GXG15.0hWoOX8X9.:e:1001'
-```
-
-Tip: you can use [atmoz/makepasswd](https://hub.docker.com/r/atmoz/makepasswd/) to generate encrypted passwords:  
-`echo -n "your-password" | docker run -i --rm atmoz/makepasswd --crypt-md5 --clearfrom=-`
-
 ## Logging in with SSH keys
 
 Mount public keys in the user's `.ssh/keys/` directory. All keys are
