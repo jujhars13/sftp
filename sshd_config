@@ -20,3 +20,6 @@ ChrootDirectory %h
 
 # Enable this for more logs
 #LogLevel VERBOSE
+
+#No Password level Auth - Jujhar
+PasswordAuthentication no
