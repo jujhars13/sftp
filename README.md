@@ -1,6 +1,10 @@
 ## SFTP Docker container
 Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things
 
+
+[![dockeri.co](http://dockeri.co/image/jujhars13/sftp)](https://hub.docker.com/r/jujhars13/sftp/)
+
+
 # Supported tags and respective `Dockerfile` links
 
 - [`debian-jessie`, `debian`, `latest` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/atmoz/sftp.svg)](http://microbadger.com/images/atmoz/sftp "Get your own image badge on microbadger.com")
