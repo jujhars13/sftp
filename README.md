@@ -7,7 +7,7 @@ Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things
 
 # Supported tags and respective `Dockerfile` links
 
-- [`debian-jessie`, `debian`, `latest` (*Dockerfile*)](https://github.com/atmoz/sftp/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/atmoz/sftp.svg)](http://microbadger.com/images/atmoz/sftp "Get your own image badge on microbadger.com")
+- [`debian-jessie`, `debian`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 
 # Securely share your files
 
