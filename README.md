@@ -155,7 +155,7 @@ bindmount /data/common /home/peter/common
 bindmount /data/docs /home/peter/docs --read-only
 ```
 
-# What's the difference between Debian and Alpine?
+## What's the difference between Debian and Alpine?
 
 The biggest differences are in size and OpenSSH version.
 [Alpine](https://hub.docker.com/_/alpine/) is 10 times smaller than
@@ -166,3 +166,6 @@ each Debian release (about 2 years). Alpine has a faster release cycle (about 6
 months) and therefore newer versions of OpenSSH. As I'm writing this, Debian
 has version 6.7 while Alpine has version 7.4. Recommended reading:
 [Comparing Debian vs Alpine for container & Docker apps](https://www.turnkeylinux.org/blog/alpine-vs-debian)
+
+## Updates
+- 2017-10-6 bumping to get latest Debian Stretch w/ patches
