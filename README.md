@@ -171,3 +171,4 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 
 ## Updates
 - 2017-10-6 bumping to get latest Debian Stretch w/ patches
+- 2018-01-5 bumping to get latest deb w/patches
