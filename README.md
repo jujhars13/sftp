@@ -1,22 +1,22 @@
-## SFTP Docker container
+# SFTP Docker container
+
 Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 - Remove password based Auth, key only
 - Switch to Debian Stretch
 
-
 [![dockeri.co](http://dockeri.co/image/jujhars13/sftp)](https://hub.docker.com/r/jujhars13/sftp/)
 
+## Supported tags and respective `Dockerfile` links
 
-# Supported tags and respective `Dockerfile` links
 - [`v1.1`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 - [`v1.0` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 
-# Securely share your files
+## Securely share your files
 
 Easy to use SFTP ([SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol)) server with [OpenSSH](https://en.wikipedia.org/wiki/OpenSSH).
 This is an automated build linked with the [debian](https://hub.docker.com/_/debian/) and [alpine](https://hub.docker.com/_/alpine/) repositories.
 
-# Usage
+## Usage
 
 - Required: define users as command arguments, STDIN or mounted in `/etc/sftp/users.conf`
   (syntax: `user:pass[:e][:uid[:gid[:dir1[,dir2]...]]]...`).
@@ -33,13 +33,13 @@ This is an automated build linked with the [debian](https://hub.docker.com/_/deb
     want them to upload files.
   - For consistent server fingerprint, mount your own host keys (i.e. `/etc/ssh/ssh_host_*`)
 
-# Examples
+## Examples
 
-## Sharing a directory from your computer
+### Sharing a directory from your computer
 
 Let's mount a directory and set UID (we will also provide our own hostkeys):
 
-```
+```bash
 docker run \
     -v /host/upload:/home/foo/upload \
     -v /host/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key \
@@ -50,7 +50,7 @@ docker run \
 
 ### Using Docker Compose:
 
-```
+```yaml
 sftp:
     image: atmoz/sftp
     volumes:
@@ -62,7 +62,7 @@ sftp:
     command: foo:pass:1001
 ```
 
-### Logging in
+## Logging in
 
 The OpenSSH server runs by default on port 22, and in this example, we are
 forwarding the container's port 22 to the host's port 2222. To log in with the
@@ -70,7 +70,7 @@ OpenSSH client, run: `sftp -P 2222 foo@<host-ip>`
 
 ## Store users in config
 
-```
+```bash
 docker run \
     -v /host/users.conf:/etc/sftp/users.conf:ro \
     -v mySftpVolume:/home \
@@ -86,6 +86,7 @@ foo:123:1001:100
 bar:abc:1002:100
 baz:xyz:1003:100
 ```
+
 ## Logging in with SSH keys
 
 Mount public keys in the user's `.ssh/keys/` directory. All keys are
@@ -94,7 +95,7 @@ directly, because OpenSSH requires limited file permissions). In this example,
 we do not provide any password, so the user `foo` can only login with his SSH
 key.
 
-```
+```bash
 docker run \
     -v /host/id_rsa.pub:/home/foo/.ssh/keys/id_rsa.pub:ro \
     -v /host/id_other.pub:/home/foo/.ssh/keys/id_other.pub:ro \
@@ -109,7 +110,7 @@ This container will generate new SSH host keys at first run. To avoid that your
 users get a MITM warning when you recreate your container (and the host keys
 changes), you can mount your own host keys.
 
-```
+```bash
 docker run \
     -v /host/ssh_host_ed25519_key:/etc/ssh/ssh_host_ed25519_key \
     -v /host/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key \
@@ -120,7 +121,7 @@ docker run \
 
 Tip: you can generate your keys with these commands:
 
-```
+```bash
 ssh-keygen -t ed25519 -f /host/ssh_host_ed25519_key < /dev/null
 ssh-keygen -t rsa -b 4096 -f /etc/ssh/ssh_host_rsa_key < /dev/null
 ```
@@ -136,7 +137,7 @@ If you are using `--volumes-from` or just want to make a custom directory
 available in user's home directory, you can add a script to `/etc/sftp.d/` that
 bindmounts after container starts.
 
-```
+```bash
 #!/bin/bash
 # File mounted as: /etc/sftp.d/bindmount.sh
 # Just an example (make your own)
@@ -159,7 +160,7 @@ bindmount /data/docs /home/peter/docs --read-only
 
 ## What's the difference between Debian and Alpine?
 
-The biggest differences are in size and OpenSSH version.
+The most obvious differences are in size and OpenSSH version.
 [Alpine](https://hub.docker.com/_/alpine/) is 10 times smaller than
 [Debian](https://hub.docker.com/_/debian/). OpenSSH version can also differ, as
 it's two different teams maintaining the packages. Debian is generally
@@ -170,5 +171,7 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 [Comparing Debian vs Alpine for container & Docker apps](https://www.turnkeylinux.org/blog/alpine-vs-debian)
 
 ## Updates
+- 2018-11-6 bumping to get latest Deb w/patches
+- 2018-01-5 bumping to get latest Deb w/patches
 - 2017-10-6 bumping to get latest Debian Stretch w/ patches
-- 2018-01-5 bumping to get latest deb w/patches
+
