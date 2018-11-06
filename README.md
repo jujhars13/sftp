@@ -8,8 +8,8 @@ Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 
 
 # Supported tags and respective `Dockerfile` links
-
-- [`debian-stretch`, `stretch`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
+- [`v1.1`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
+- [`v1.0` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 
 # Securely share your files
 
