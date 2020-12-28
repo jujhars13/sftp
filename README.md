@@ -42,7 +42,7 @@ docker run \
     -v /host/upload:/home/foo/upload \
     -v /host/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key \
     -v /host/ssh_host_rsa_key.pub:/etc/ssh/ssh_host_rsa_key.pub \
-    -p 2222:22 -d atmoz/sftp \
+    -p 2222:22 -d jujhars13/sftp \
     foo:pass:1001
 ```
 
@@ -50,7 +50,7 @@ docker run \
 
 ```yaml
 sftp:
-    image: atmoz/sftp
+    image: jujhars13/sftp
     volumes:
         - /host/upload:/home/foo/upload
         - /host/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key
@@ -74,7 +74,7 @@ docker run \
     -v mySftpVolume:/home \
     -v /host/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key \
     -v /host/ssh_host_rsa_key.pub:/etc/ssh/ssh_host_rsa_key.pub \
-    -p 2222:22 -d atmoz/sftp
+    -p 2222:22 -d jujhars13/sftp
 ```
 
 `/host/users.conf`:
@@ -97,7 +97,7 @@ docker run \
     -v /host/id_rsa.pub:/home/foo/.ssh/keys/id_rsa.pub:ro \
     -v /host/id_other.pub:/home/foo/.ssh/keys/id_other.pub:ro \
     -v /host/share:/home/foo/share \
-    -p 2222:22 -d atmoz/sftp \
+    -p 2222:22 -d jujhars13/sftp \
     foo::1001
 ```
 
@@ -112,7 +112,7 @@ docker run \
     -v /host/ssh_host_ed25519_key:/etc/ssh/ssh_host_ed25519_key \
     -v /host/ssh_host_rsa_key:/etc/ssh/ssh_host_rsa_key \
     -v /host/share:/home/foo/share \
-    -p 2222:22 -d atmoz/sftp \
+    -p 2222:22 -d jujhars13/sftp \
     foo::1001
 ```
 
