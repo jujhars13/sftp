@@ -1,5 +1,5 @@
-FROM debian:stretch
-MAINTAINER Jujhar Singh [jujhar.com]
+FROM debian:buster-slim
+LABEL MAINTAINER="Jujhar Singh [jujhar.com]"
 
 # - Install packages
 # - OpenSSH needs /var/run/sshd to run

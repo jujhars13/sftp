@@ -2,13 +2,14 @@
 
 Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 - Remove password based Auth, key only
-- Switch to Debian Stretch
+- Switch to Debian ~~Stretch~~ Buster
 
 [![dockeri.co](http://dockeri.co/image/jujhars13/sftp)](https://hub.docker.com/r/jujhars13/sftp/)
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`v1.1`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
+- [`v1.2`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
+- [`v1.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 - [`v1.0` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 
 ## Securely share your files
@@ -174,4 +175,3 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 - 2018-11-6 bumping to get latest Deb w/patches
 - 2018-01-5 bumping to get latest Deb w/patches
 - 2017-10-6 bumping to get latest Debian Stretch w/ patches
-
