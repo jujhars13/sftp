@@ -77,8 +77,7 @@ docker run \
     -p 2222:22 -d atmoz/sftp
 ```
 
-/host/users.conf:
-
+`/host/users.conf`:
 ```
 foo:123:1001:100
 bar:abc:1002:100
@@ -169,6 +168,7 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 [Comparing Debian vs Alpine for container & Docker apps](https://www.turnkeylinux.org/blog/alpine-vs-debian)
 
 ## Updates
+- 2020-12-18 switching out to Debian buster-slim
 - 2018-11-6 bumping to get latest Deb w/patches
 - 2018-01-5 bumping to get latest Deb w/patches
 - 2017-10-6 bumping to get latest Debian Stretch w/ patches
