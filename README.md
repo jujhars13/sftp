@@ -1,7 +1,9 @@
 # SFTP Docker container
 
+Easy to use hardened [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) server based on Debian with [OpenSSH](https://en.wikipedia.org/wiki/OpenSSH).
+
 Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
-- Remove password based Auth, key only
+- Remove password based Auth, now key only
 - Switch to Debian ~~Stretch~~ Buster
 
 [![dockeri.co](http://dockeri.co/image/jujhars13/sftp)](https://hub.docker.com/r/jujhars13/sftp/)
@@ -11,11 +13,6 @@ Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 - [`v1.2`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 - [`v1.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
 - [`v1.0` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
-
-## Securely share your files
-
-Easy to use SFTP ([SSH File Transfer Protocol](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol)) server with [OpenSSH](https://en.wikipedia.org/wiki/OpenSSH).
-This is an automated build linked with the [debian](https://hub.docker.com/_/debian/) and [alpine](https://hub.docker.com/_/alpine/) repositories.
 
 ## Usage
 
