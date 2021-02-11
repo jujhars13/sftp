@@ -105,7 +105,7 @@ docker run \
 ## Providing your own SSH host key
 
 This container will generate new SSH host keys at first run. To avoid that your
-users get a MITM warning when you recreate your container (and the host keys
+users get a [MITM](https://en.wikipedia.org/wiki/Man-in-the-middle_attack) warning when you recreate your container (and the host keys
 changes), you can mount your own host keys.
 
 ```bash
