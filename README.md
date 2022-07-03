@@ -3,6 +3,7 @@
 Easy to use hardened [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) server based on Debian with [OpenSSH](https://en.wikipedia.org/wiki/OpenSSH).
 
 Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
+
 - Remove password based Auth, now key only
 - Switch to Debian ~~Stretch~~, ~~Buster~~, Bullseye
 
@@ -10,12 +11,12 @@ Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`v1.3.0`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.3.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
-- [`v1.2.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
-- [`v1.2.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
-- [`v1.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
-- [`v1.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
-- [`v1.0` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp "Get your own image badge on microbadger.com")
+- [`v1.3.0`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.3.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.2.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.2.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.0` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 
 ## Usage
 
@@ -81,7 +82,8 @@ docker run \
 ```
 
 `/host/users.conf`:
-```
+
+```bash
 foo:123:1001:100
 bar:abc:1002:100
 baz:xyz:1003:100
