@@ -171,6 +171,8 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 [Comparing Debian vs Alpine for container & Docker apps](https://www.turnkeylinux.org/blog/alpine-vs-debian)
 
 ## Changelog
+
+- 2020-12-18 switching out to Debian bullseye-slim
 - 2020-12-18 switching out to Debian buster-slim
 - 2018-11-6 bumping to get latest Deb w/patches
 - 2018-01-5 bumping to get latest Deb w/patches
