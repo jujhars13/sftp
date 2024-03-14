@@ -175,6 +175,7 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 
 ## Changelog
 
+- 2024-03-16 switching out to Debian bookworm-slim
 - 2020-12-18 switching out to Debian bullseye-slim
 - 2020-12-18 switching out to Debian buster-slim
 - 2018-11-6 bumping to get latest Deb w/patches
