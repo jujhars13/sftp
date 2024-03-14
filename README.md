@@ -5,13 +5,14 @@ Easy to use hardened [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Prot
 Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 
 - Remove password based Auth, now key only
-- Switch to Debian ~~Stretch~~, ~~Buster~~, Bullseye
+- Switch to Debian ~~Stretch~~, ~~Buster~~, ~~Bullseye~~, Bookworm
 
 [![dockeri.co](http://dockeri.co/image/jujhars13/sftp)](https://hub.docker.com/r/jujhars13/sftp/)
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`v1.3.0`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.3.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.4.0`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.4.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.3.0`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.3.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 - [`v1.2.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 - [`v1.2.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 - [`v1.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
