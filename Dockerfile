@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM debian:12.5-slim
 LABEL MAINTAINER="Jujhar Singh [jujhar.com]"
 
 # - Install packages
