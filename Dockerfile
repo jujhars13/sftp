@@ -1,4 +1,4 @@
-FROM debian:12.5-slim
+FROM debian:12.10-slim
 LABEL MAINTAINER="Jujhar Singh [jujhar.com]"
 
 # - Install packages
