@@ -1,5 +1,5 @@
-FROM debian:12.12-slim
-LABEL MAINTAINER="Jujhar Singh [jujhar.com]"
+FROM debian:13-slim
+LABEL org.opencontainers.image.authors="Jujhar Singh <jujhar.com>"
 
 # - Install packages
 # - OpenSSH needs /var/run/sshd to run

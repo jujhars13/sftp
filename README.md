@@ -11,7 +11,8 @@ Forked from [atmoz/sftp](https://github.com/atmoz/sftp) to tune a few things:
 
 ## Supported tags and respective `Dockerfile` links
 
-- [`v1.4.0`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.4.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.5.0`, `latest` (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.5.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
+- [`v1.4.0`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.4.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 - [`v1.3.0`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.3.0/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 - [`v1.2.2`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.2/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
 - [`v1.2.1`, (*Dockerfile*)](https://github.com/jujhars13/sftp/blob/v1.2.1/Dockerfile) [![](https://images.microbadger.com/badges/image/jujhars13/sftp.svg)](http://microbadger.com/images/jujhars13/sftp)
@@ -175,6 +176,7 @@ has version 6.7 while Alpine has version 7.4. Recommended reading:
 
 ## Changelog
 
+- 2025-11-26 switching out to Debian trixie (13-slim)
 - 2024-03-16 switching out to Debian bookworm-slim
 - 2020-12-18 switching out to Debian bullseye-slim
 - 2020-12-18 switching out to Debian buster-slim
